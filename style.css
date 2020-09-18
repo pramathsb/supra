@@ -1,0 +1,122 @@
+:root {
+  --DeepLemon: #eec219;
+  --JazzberryJam: #ba0f6b;
+  --CarminePink: #de4e4e;
+  --RoyalOrange: #fe9345;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-family: "Bree Serif", serif;
+  font-size: 1.5em;
+  font-weight: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--JazzberryJam);
+  color: white;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  font-size: 2em;
+  color: var(--DeepLemon);
+  z-index: 1;
+  background-color: var(--JazzberryJam);
+  box-shadow: 0px 8px 20px 5px rgba(57, 63, 72, 0.3);
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    font-size: 10vw;
+    line-height: 1;
+    margin: 20px 0;
+  }
+}
+
+h1 {
+  font-family: "Parisienne", cursive;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--RoyalOrange);
+  color: var(--DeepLemon);
+}
+
+a,
+a:hover {
+  color: var(--DeepLemon);
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo .text-wrapper {
+  position: relative;
+  padding-top: 0.1em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.logo .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 2px;
+  width: 100%;
+  background-color: var(--RoyalOrange);
+  /* background-color: white; */
+  transform-origin: 0.5 0;
+}
+
+.logo .ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.logo .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.spin {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 1;
+  animation: spin 40s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
