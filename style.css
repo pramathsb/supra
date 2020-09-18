@@ -109,10 +109,11 @@ main {
 
 .spin {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 35px;
   line-height: 1;
   animation: spin 40s linear infinite;
+  margin-right: 5px;
 }
 
 @keyframes spin {
