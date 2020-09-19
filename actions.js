@@ -11,7 +11,7 @@ anime
     targets: ".logo .line",
     duration: 600,
     easing: "easeOutExpo",
-    translateY: (el, i) => -0.625 + 0.625 * 2 * i + "em",
+    translateY: (el, i) => -0.8 + 0.8 * 2 * i + "em",
   })
   .add({
     targets: ".logo .ampersand",
