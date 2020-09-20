@@ -38,7 +38,6 @@ header {
   header {
     font-size: 10vw;
     line-height: 1;
-    margin: 20px 0;
   }
 }
 
@@ -105,7 +104,7 @@ a:hover {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .spin {
@@ -125,4 +124,15 @@ main {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.banner {
+  background-color: #fed434;
+}
+
+.bannerImg {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
 }
